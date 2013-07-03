@@ -1,0 +1,36 @@
+﻿/* Banner */
+
+.row
+{
+    width: 1000px;
+}
+
+[class*="span"]
+{
+    margin-left: 0px;
+    margin-right: 4px;
+}
+
+#logo   
+{ 
+    height: 120px;
+    background-color: #5B98CE;
+    /*width: 1000px;*/
+}
+
+#stepIndex
+{
+    
+}
+
+#stepIndex
+{
+    background-color: Gray;
+    height: 400px;
+}
+
+#stepContent
+{
+    background-color: Gray;
+    height: 400px;
+}

@@ -1,0 +1,673 @@
+﻿/*
+    ***************************************
+    Customised layout for NAP Portal UNFCCC
+
+    May / June 2013
+    Kieran Ryan
+    Westhouse Consulting
+    *************************************** 
+*/ 
+
+html, body {
+  font-family: sans-serif;
+}
+
+body
+{
+    background-color: White;
+}
+
+a
+{
+    color: #5B98CE;
+}
+
+a:hover, a:focus
+{
+    color: Black;
+    text-decoration: none;
+}
+
+.blueFill
+{
+    background-color: #5B98CE;
+    color: White;
+    padding: 8px;
+}
+
+.upper
+{
+    text-transform: uppercase;
+}
+
+/* used to switch between Landing page and Technical Guidelines */
+.makeSeeThrough
+{
+    display: none;
+}
+
+.infoBoxBorder
+{
+    border: 1px solid #CCC;
+}
+
+.row
+{
+    margin-bottom: 8px;
+}
+
+[class*="span"] 
+{
+    margin-left: -20px!important;
+    margin-right: 28px;
+}
+
+.span3
+{
+    width: 244px;
+}
+
+.span4
+{
+    width: 328px;
+}
+
+.span6
+{
+    width: 496px;
+}
+
+#pageContainer
+{
+    margin: 0px auto;
+} 
+
+/*
+    Landing page: start
+*/
+
+/*
+    Banner (logo plus navigator): start
+*/
+
+/*
+    Logo: end
+*/
+
+header#logo.row
+{
+    height: 130px;  /* original >> height: 160px; */
+    width: 1000px;   
+}
+
+#logo   
+{ 
+    position: relative;
+    height: 120px;
+    background-color: White;
+    /*width: 1000px;*/
+}
+
+.logoWhiteOnBlue
+{
+    background-color: #5B98CE;
+    background-image: url(images/unfccc-l-3c-rgb-7.5-trans.png);
+    /*width: 1000px;*/
+}
+
+
+#imgLogo
+{
+    position: relative;
+    top: 20px;
+    left: -160px;
+}
+
+#logoTitle
+{
+    position: relative;
+    top: 60px;
+    left: 140px;
+    color: #5B98CE;
+    font-size: 200%;
+    font-weight: bold;
+    width: 200px;
+}
+
+.logoTitleWhite
+{
+    color: White;
+}
+
+#search
+{
+    margin-top: 25px;
+    padding-right: 20px;
+}
+
+/*
+    Logo: end
+*/
+
+/*
+    Navigator: start
+*/
+
+#navigation
+{
+    margin-top: 30px!important;
+    margin-bottom: 20px;
+    /*width: 1000px;*/
+}
+
+a.top-level
+{
+    height: 39px!important;
+    line-height: 39px!important;
+}
+
+/* Toolbar */
+div.navbar-inner
+{
+    padding-right: 0px;
+    min-height: 39px!important;
+    background-color: #5B98CE;
+    background-image: linear-gradient(to bottom, SkyBlue, #5B98CE);
+}
+
+/* Mega-Menu overwrites: start */
+
+.navbar .nav#main-menu li
+{
+    border-right: 0px; /* set to 1px for multi columns within mega menu */
+}
+
+.navbar .nav#main-menu li a
+{
+    font-weight: normal;
+}
+
+.navbar #main-menu.nav .caret
+{
+    color: #5B98CE;
+}
+
+.navbar #main-menu.nav .dropdown-menu
+{
+    border-top-color: #5B98CE;
+}
+
+.navbar .nav#main-menu li a.top-level 
+{
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: 500;
+    text-transform: none;
+}
+    
+.navbar .nav#main-menu li a.top-level:hover,
+.navbar .nav#main-menu li.home-link a:hover
+{
+    color: #008CFD; /* Mega Menu highlight */
+    border-bottom-color: #5B98CE;
+}
+
+.navbar .nav#main-menu .dropdown-menu.mega-menu 
+{
+    min-width: 328px; 
+}
+
+.navbar .nav#main-menu .dropdown-menu.mega-menu .mega-menu-wrapper ul 
+{
+    list-style: none;
+}
+
+.navbar .nav#main-menu .dropdown-menu.mega-menu .mega-menu-wrapper ul li 
+{
+    padding: 0 2em;
+}
+
+/* Link text */
+.navbar .nav > li > a:focus, .navbar .nav > li > a:hover, .navbar .nav > li > a
+{
+    color: White;
+}
+
+/* Dropdown */
+.navbar #main-menu.nav li.open a.dropdown-toggle, .navbar #main-menu.nav li.active a.top-level, .navbar #main-menu.nav li.active a:hover
+{
+    background-color: White;
+    color: #5B98CE;
+}
+
+.navbar #main-menu.nav li.open a.dropdown-toggle .caret, .navbar #main-menu.nav li.active a.top-level .caret, .navbar #main-menu.nav li.active a:hover .caret
+{
+    color: #5B98CE;
+}
+
+/* Mega-Menu overwrites: end */
+
+/*
+    Navigator: end
+*/
+
+/*
+    Banner (logo plus navigator): end
+*/
+
+/*
+    Main: start
+*/
+#turntable
+{
+    height: 328px;
+}
+
+.carousel-caption
+{
+    opacity: 0.65;
+    filter: alpha(opacity=65);
+}
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img 
+{
+    height: 327px;
+}
+
+div.capty-caption
+{
+    font-weight: normal;
+}
+
+#main
+{
+    padding: 0px;  
+    margin-top: 35px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#main.row
+{
+    width: 1020px!important;
+    height: 330px;
+}
+
+#main.row .span4
+{
+    width: 328px;
+}
+
+#main.span3, #main.span4, #main.span6
+{
+    margin-right: 8px;
+}
+
+#main .span3 .row, #main .span4 .row, #main .span6 .row
+{
+    height: 158px;
+    margin-left: 0px;
+}
+
+#main .span3 .row > div, #main .span4 .row > div, #main .span6 .row > div
+{
+    position: relative;
+    margin: 8px;
+}
+
+#main .span3 .row div[hint], #main .span4 .row div[hint], #main .span6 .row div[hint]
+{
+    padding-top: 30px;
+}
+
+#guidelines, #countries, #caseStudies, #globalSupport
+{
+    position: relative;
+}
+
+#guidelines img, #countries img, #caseStudies img, #globalSupport img 
+{
+    position: relative;
+    border: 0px;
+}
+
+#guidelines img
+{
+    top: -10px;
+    left: 50px;
+    width: 120px;
+    height: 120px;
+}
+
+#countries img, #caseStudies img, #globalSupport img  
+{
+    top: -10px;
+    left: 0px;
+    width: 220px;
+    height: 120px;
+}
+
+#databaseBrowse 
+{
+    position: relative;
+    padding: 5px 0px 0px 120px;
+    top: 55px;
+    left: 187px;
+}
+
+/*
+    Main: end
+*/
+
+/*
+    MainFooter: start
+*/
+
+#mainFooter
+{
+    clear: both;
+    padding: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#mainFooter.row
+{
+    width: 1020px!important;
+}
+
+#mainFooter.row .span3
+{
+    margin-top: -12px;
+    width: 242px;
+    height: 280px;
+}
+
+#mainFooter .span3 > div > div
+{    
+    margin: 30px 0px 0px -24px;
+}
+
+#dmtList /* IE friendly ;-) */
+{    
+    margin-left: 40px;
+}
+
+.imageList
+{
+    list-style-type: none;
+}
+
+.imageList li
+{
+    padding-bottom: 4px;
+}
+
+#mainFooter .span3 > div[hint='Portals'] > div
+{
+    margin-left: -6px;
+}
+
+#mainFooter .span3 > div
+{
+    position: relative;
+    margin: 0px 8px;
+}
+
+#btnMore
+{
+    position: absolute;
+    left: 155px;
+    top: 211px;
+    z-index: 1000!important;
+    width: 60px;
+    height: 25px;
+    background-color: SkyBlue;
+    background-image: linear-gradient(to bottom, SkyBlue, SkyBlue);
+}
+
+#mainFooter .span3 > div:after, #main .span3 .row > div:after, #main .span4 .row > div:after, #main .span6 .row > div:after
+{
+content: attr(hint);
+position: absolute;
+left: -12px;
+padding: 3px 7px;
+font-size: 12px;
+font-weight: bold;
+background-color: #f5f5f5;
+border: 1px solid #ddd;
+color: #5F9DD1;
+-webkit-border-radius: 4px 0 4px 0;
+-moz-border-radius: 4px 0 4px 0;
+border-radius: 4px 0 4px 0;
+}
+
+#main .span3 .row > div:after, #main .span4 .row > div:after, #main .span6 .row > div:after
+{
+    top: -11px;
+}
+
+#mainFooter .span3 > div:after
+{
+    top: -32px;
+}
+
+#mainFooter img 
+{
+    opacity: 1.0;
+    width: 226px;
+    height: 78px;
+}
+
+#mainFooter .thumbnail
+{
+    padding: 3px;
+}
+
+/*#mainFooter img:hover
+{
+    opacity: 1.0; No trigger on firefox because images underlie infobox title div 
+}*/
+
+#mainFooter .thumbnails > li
+{
+    margin-bottom: 0px!important;
+}
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar
+{
+    background: #82C7E7;
+}
+
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar
+{
+    background: #5E9CD0;
+}
+
+.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar, .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar 
+{
+    background: #5E9CD0;
+}
+
+#mainFooter .mCSB_scrollTools .mCSB_draggerRail 
+{
+    background: rgb(5,5,5);
+    width: 4px;
+}
+/*
+    MainFooter: end
+*/
+
+/*
+    Footer: start
+*/
+footer.row 
+{
+    width: 1000px;
+    height: 40px;
+    background-color: #5B98CE;
+    background-image: linear-gradient(to bottom, #5B98CE, SkyBlue);
+}
+
+div > footer ul.dropdown-menu
+{
+    display: block;
+    position: relative;
+    top: 3px;
+}
+
+div > footer ul.dropdown-menu > li > a
+{
+    line-height: 10px;
+    color: White; 
+    font-size: 11px;
+}
+
+div > footer ul.dropdown-menu > li > a:hover, div > footer ul.dropdown-menu > li > a:focus, div > footer ul.dropdown-submenu:hover > a, div > footer ul.dropdown-submenu:focus > a
+{
+    color: White;
+    background-color: Skyblue; 
+    background-image: linear-gradient(to bottom, Skyblue, Skyblue);
+} 
+
+div > footer ul.dropdown-menu
+{
+    background-color: transparent;
+}
+/*
+    Footer: start
+*/
+
+/*
+    Landing page: end
+*/
+
+/*
+    tGuidleines Page: start
+*/
+
+
+/*
+    Navigator: start
+*/
+
+#steps 
+{
+    margin-top: 35px;
+}
+
+section#steps.row
+{
+    margin-left: 0px;
+    width: 1020px;
+}
+
+#stepIndex
+{
+    height: 616px;
+    overflow-y: auto;
+}
+
+.accordion
+{
+    margin-bottom: 0px;
+}
+
+a.accordion-toggle:hover
+{
+    text-decoration: none;
+}
+
+a.accordion-toggle:hover div
+{
+    background-color: #5B98CE   ;
+    color: white;
+    font-weight: bold;
+}
+
+.accordion-toggle div
+{
+    font-weight: bold;
+}
+
+.accordion-inner
+{
+    padding: 0px 8px;
+}
+
+a.toggle-step:hover
+{
+    text-decoration: none;
+}
+
+a.toggle-step:hover div
+{
+    background-color: #EDEDED;
+}
+
+.toggle-step div
+{
+    padding: 0px;
+}
+
+#stepContent > div > div
+{
+    margin: 8px;
+    height: 592px;
+    padding-bottom: 8px;
+    overflow-y: auto;
+}
+
+#steps.row .span8
+{
+    width: 662px;
+}
+
+/*
+    Navigator: end
+*/
+
+/*
+    Content: start
+*/
+
+.tGuide_sandyBox 
+{
+    background-color: #E3CD9B; 
+}
+
+.tGuide_sandyBox_inner
+{
+    padding: 8px;
+    color: #666;
+}
+
+.tGuide_blueBox
+{
+    background-color: #EEF1FA;
+}
+
+ul.selectedReferences
+{
+    list-style-type: none;
+}
+
+ul.selectedReferences li
+{
+    padding: 8px 0px;
+}
+
+.tGuide_blueBox_inner
+{
+    padding: 8px;
+    color: Black;
+}
+
+/*
+    Content: end
+*/
+
+/*
+    tGuidleines Page: end
+*/

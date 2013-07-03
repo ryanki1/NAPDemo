@@ -1,0 +1,652 @@
+﻿<!DOCTYPE html>
+<html><head>
+         
+    <title>Climate Change Technical Guidelines     
+    </title>         
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">         
+    <link href="css/bootstrap.css" type="text/css" rel="Stylesheet">         
+    <link href="css/jquery.capty.css" type="text/css" rel="Stylesheet">         
+    <link href="css/flexor-mega-menu.css" type="text/css" rel="Stylesheet">         
+    <link href="css/font-awesome.min.css" type="text/css" rel="Stylesheet">                     
+    <link href="css/style.css" type="text/css" rel="Stylesheet">                        
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->          
+    <!--[if lt IE 9]>
+              <script src="js/html5.js"></script>
+            <![endif]--> 
+            
+  <style type="text/css">            
+    .imageList img
+      {
+      opacity:0.4 !important;
+      filter:alpha(opacity=40); /* For IE8 and earlier */
+      }
+    .imageList img:hover
+      {
+      opacity:1.0 !important;
+      filter:alpha(opacity=100); /* For IE8 and earlier */
+      }
+  </style>            
+              
+  <style type="text/css">.highslide img {cursor: url(CommonScripts/highslide/4-1-8/graphics/zoomin.cur), pointer !important;}</style></head>  
+  <body>         
+    <div id="pageContainer" class="container">               
+      <header id="logo" class="row">                     
+        <form class="form-search form-horizontal">                                   
+          <div class="control-group">                                 
+            <a href="#">              
+              <img id="imgLogo" class="control-image" src="images/unfccc-l-3c-rgb-7.5-trans.png"></a>                                 
+            <label for="imgLogo" class="control-label" id="logoTitle">NAP Central             
+            </label>                                 
+            <div id="search" class="input-prepend pull-right" data-original-title="" title="">                                       
+              <i class="icon-search add-on"></i>                                       
+              <input type="text" class="input-medium search-query">                                 
+            </div>                                 
+            <div id="databaseBrowse" class="input-prepend pull-right">                                       
+              <button class="btn">Browse the database               
+              </button>                                       
+              <i class="icon-chevron-right add-on"></i>                                 
+            </div>                           
+          </div>                                       
+        </form>                     
+        <div id="navigation">                           
+          <nav class="navbar">                                 
+            <div class="container">                                       
+              <div class="navbar-inner">                                             
+                <ul class="nav" id="main-menu">                                                                    
+                  <li id="overview" class="dropdown">                                                         
+                    <a href="#" class="dropdown-toggle top-level" data-toggle="dropdown">Adaptation Overview                       
+                      <b class="caret"></b></a>                                                         
+                    <ul class="dropdown-menu mega-menu span4" role="menu">                                                               
+                      <li class="mega-menu-wrapper row" role="menu-item">                                                                     
+                        <ul class="span4" role="menu">                          
+                          <li role="menu-item">                            
+                            <a href="#">General</a>                          
+                          </li>                                                                                
+                          <li role="menu-item">                            
+                            <a href="#">Framing adaptation</a>                          
+                          </li>                                                                           
+                          <li role="menu-item">                            
+                            <a href="#">Observations and scenarios</a>                          
+                          </li>                                                                           
+                          <li role="menu-item">                            
+                            <a href="#">Impacts</a>                          
+                          </li>                                                                           
+                          <li role="menu-item">                            
+                            <a href="#">Vulnerabilities and risks</a>                          
+                          </li>                                                                           
+                          <li role="menu-item">                            
+                            <a href="#">Adaptations and risks</a>                          
+                          </li>                                                                           
+                          <li role="menu-item">                            
+                            <a href="#">Adaptation strategies</a>                          
+                          </li>                                                                     
+                        </ul>                                                               
+                      </li>                                                                      
+                    </ul>                                                   
+                  </li>                                                   
+                  <!-- Top level dropdown  -->                                                    
+                  <li id="guidelines" class="dropdown">                                                         
+                    <a href="#" class="dropdown-toggle top-level" data-toggle="dropdown">Guidelines                       
+                      <b class="caret"></b></a>                                                         
+                    <ul class="dropdown-menu mega-menu" role="menu">                                                               
+                      <li class="mega-menu-wrapper row" role="menu-item">                                                                     
+                        <ul class="span4" role="menu">                                                                           
+                          <!--<li class="menu-title" role="menu-item">NAP Guidelines</li>    -->                                                                            
+                          <li role="menu-item">                            
+                            <a href="http://unfccc.int/7279">Print versions</a>                          
+                          </li>                                                                                
+                          <li role="menu-item">                            
+                            <a href="#">Interactive NAP Technical Guidelines</a>                          
+                          </li>                                                                           
+                          <li role="menu-item">                            
+                            <a href="#">NAP Helper</a>                          
+                          </li>                                                                     
+                        </ul>                                                               
+                      </li>                                                                      
+                    </ul>                                                   
+                  </li>                                                          
+                  <li id="hazards" class="dropdown">                                                         
+                    <a href="#" class="dropdown-toggle top-level" data-toggle="dropdown">Hazards                       
+                      <b class="caret"></b></a>                                                         
+                    <ul class="dropdown-menu mega-menu" role="menu">                                                               
+                      <li class="mega-menu-wrapper row" role="menu-item">                                                                     
+                        <ul class="span4" role="menu">                                                                           
+                          <!--<li class="menu-title" role="menu-item">NAP Guidelines</li>    -->                                                                            
+                          <li role="menu-item">                            
+                            <a href="#">Drought/aridity</a>                          
+                          </li>                                                                                
+                          <li role="menu-item">                            
+                            <a href="#">Erratic rainfall</a>                          
+                          </li>                                                                           
+                          <li role="menu-item">                            
+                            <a href="#">Shift of seasons</a>                          
+                          </li> 
+                           <li role="menu-item">                            
+                            <a href="#">Floods</a>                          
+                          </li>                                                                                
+                          <li role="menu-item">                            
+                            <a href="#">Sea-level rise</a>                          
+                          </li>                                                                           
+                          <li role="menu-item">                            
+                            <a href="#">Storms</a>  
+                             </li><li role="menu-item">                            
+                            <a href="#">Extreme heat</a>                          
+                          </li>                                                                                
+                          <li role="menu-item">                            
+                            <a href="#">Extreme cold</a>                          
+                          </li>                                                                           
+                          <li role="menu-item">                            
+                            <a href="#">Vector and water-borne diseases</a>                            
+                          </li>
+                          <li role="menu-item">                            
+                            <a href="#">Slow onset events</a>                            
+                          </li>                                                                          
+                        </ul>                                                               
+                      </li>                                                                      
+                    </ul>                                                   
+                  </li>                                                    
+                  <li id="sectors" class="dropdown">                                                         
+                    <a href="#" class="dropdown-toggle top-level" data-toggle="dropdown">Sectors                       
+                      <b class="caret"></b></a>                                                         
+                    <ul class="dropdown-menu mega-menu" role="menu">                                                               
+                      <li class="mega-menu-wrapper row" role="menu-item">                                                                     
+                        <ul class="span4" role="menu">                                                                           
+                          <!--<li class="menu-title" role="menu-item">NAP Guidelines</li>    -->                                                                            
+                          <li role="menu-item">                            
+                            <a href="#">General</a>                          
+                          </li>                                                                                
+                          <li role="menu-item">                            
+                            <a href="#">Agriculture and food security</a>                          
+                          </li>                                                                           
+                          <li role="menu-item">                            
+                            <a href="#">Water resources</a>                          
+                          </li>                            
+                          <li role="menu-item">                            
+                            <a href="#">Coastal zones</a>                          
+                          </li>                                                                                
+                          <li role="menu-item">                            
+                            <a href="#">Health</a>                          
+                          </li>                                                                           
+                          <li role="menu-item">                            
+                            <a href="#">Infrastructure</a>                          
+                          </li>                             
+                          <li role="menu-item">                            
+                            <a href="#">Socio-economic activities</a>                          
+                          </li>                                                                                
+                          <li role="menu-item">                            
+                            <a href="#">Terrestrial, freshwater and marine ecosystems</a>                          
+                          </li>                                                                           
+                          <li role="menu-item">                            
+                            <a href="#">Disaster risk reduction</a>                          
+                          </li>                                                                       
+                        </ul>                                                               
+                      </li>                                                                      
+                    </ul>                                                   
+                  </li>                                                     
+                  <li id="countries" class="dropdown">                                                         
+                    <a href="#" class="dropdown-toggle top-level" data-toggle="dropdown">Countries                       
+                      <b class="caret"></b></a>                                                         
+                    <ul class="dropdown-menu mega-menu" role="menu">                                                               
+                      <li class="mega-menu-wrapper row" role="menu-item">                                                                     
+                        <ul class="span4" role="menu">                                                                           
+                          <!--<li class="menu-title" role="menu-item">NAP Guidelines</li>    -->                                                                            
+                          <li role="menu-item">                            
+                            <a href="#">General</a>                          
+                          </li>                                                                                                                           
+                          <li role="menu-item">                            
+                            <a href="#">Countries</a>                          
+                          </li>                            
+                          <li role="menu-item">                            
+                            <a href="#">Regions</a>                          
+                          </li>                                                                                
+                          <li role="menu-item">                            
+                            <a href="#">Cities and towns</a>                          
+                          </li>                                                                           
+                          <li role="menu-item">                            
+                            <a href="#">Economic zones</a>                          
+                          </li>                                                                     
+                        </ul>                                                               
+                      </li>                                                                      
+                    </ul>                                                   
+                  </li>                                                  
+                  <li id="tools" class="dropdown">                                                         
+                    <a href="#" class="dropdown-toggle top-level" data-toggle="dropdown">Tools                       
+                      <b class="caret"></b></a>                                                         
+                    <ul class="dropdown-menu mega-menu" role="menu">                                                               
+                      <li class="mega-menu-wrapper row" role="menu-item">                                                                     
+                        <ul class="span4" role="menu">                                                                           
+                          <!--<li class="menu-title" role="menu-item">NAP Guidelines</li>    -->                                                                            
+                          <li role="menu-item">                            
+                            <a href="#">General</a>                          
+                          </li>                                                                                
+                          <li role="menu-item">                            
+                            <a href="#">Case study browse tool</a>                          
+                          </li>                                                                           
+                          <li role="menu-item">                            
+                            <a href="#">Methods and tools</a>                          
+                          </li>                            
+                          <li role="menu-item">                            
+                            <a href="#">Data navigation</a>                          
+                          </li>                                                                                
+                          <li role="menu-item">                            
+                            <a href="#">PEGMe tool</a>                          
+                          </li>                                                                                             
+                        </ul>                                                               
+                      </li>                                                                      
+                    </ul>                                                   
+                  </li>                                                  
+                  <li id="support" class="dropdown">                                                         
+                    <a href="#" class="dropdown-toggle top-level" data-toggle="dropdown">Support                       
+                      <b class="caret"></b></a>                                                         
+                    <ul class="dropdown-menu mega-menu" role="menu">                                                               
+                      <li class="mega-menu-wrapper row" role="menu-item">                                                                     
+                        <ul class="span4" role="menu">                                                                           
+                          <!--<li class="menu-title" role="menu-item">NAP Guidelines</li>    -->                                                                            
+                          <li role="menu-item">                            
+                            <a href="#">Global Support Programme for LDC's</a>                          
+                          </li>                                                                                
+                          <li role="menu-item">                            
+                            <a href="#">Support to developing countries</a>                          
+                          </li>                                                                           
+                          <li role="menu-item">                            
+                            <a href="#">Training</a>                          
+                          </li>                            
+                          <li role="menu-item">                            
+                            <a href="#">E-Learning</a>                          
+                          </li>                                                                                                                   
+                        </ul>                                                               
+                      </li>                                                                      
+                    </ul>                                                   
+                  </li>      
+                  <li id="portals" class="dropdown">                                                         
+                    <a href="#" class="dropdown-toggle top-level" data-toggle="dropdown">Portals                       
+                      <b class="caret"></b></a>                                                         
+                    <ul class="dropdown-menu mega-menu span4" role="menu">                                                               
+                      <li class="mega-menu-wrapper row" role="menu-item">                                                                     
+                        <ul class="span4" role="menu">                          
+                          <!--                                                <li class="menu-title" role="menu-item">Adaptation Overview</li>-->                                                                                
+                          <li role="menu-item">                            
+                            <a href="#">Country adaptation priorities</a>                          
+                          </li>                                                                                
+                          <li role="menu-item">                            
+                            <a href="#">Adaptation projects database</a>                          
+                          </li>                                                                           
+                          <li role="menu-item">                            
+                            <a href="#">Best practices and lessons learned</a>                          
+                          </li>                                                                           
+                          <li role="menu-item">                            
+                            <a href="#">Data and tool archive</a>                          
+                          </li>
+                          <li role="menu-item">                            
+                            <a href="#">NAP Outputs</a>                          
+                          </li>                                                                           
+                          <li role="menu-item">                            
+                            <a href="#">Science synthesis in LDCs</a>                          
+                          </li>                                                                           
+                          <li role="menu-item">                            
+                            <a href="#">NAP Exchange</a>                          
+                          </li> 
+                          <li role="menu-item">                            
+                            <a href="#">Monitoring and evaluating the NAP process</a>                          
+                          </li>                                                                                                                        
+                        </ul>                                                               
+                      </li>                                                                      
+                    </ul>                                                   
+                  </li>                                                   
+                  <li id="Links" class="dropdown">                                                         
+                    <a href="#" class="dropdown-toggle top-level" data-toggle="dropdown">Links                       
+                      <b class="caret"></b></a>                                                         
+                    <ul class="dropdown-menu mega-menu span4" role="menu">                                                               
+                      <li class="mega-menu-wrapper row" role="menu-item">                                                                     
+                        <ul class="span4" role="menu">                          
+                          <!--                                                <li class="menu-title" role="menu-item">Adaptation Overview</li>-->                                                                                
+                          <li role="menu-item">                            
+                            <a href="#">Organizations</a>                          
+                          </li>                                                                                
+                          <li role="menu-item">                            
+                            <a href="#">Regional platforms</a>                          
+                          </li>                                                                           
+                          <li role="menu-item">                            
+                            <a href="#">Global platforms</a>                          
+                          </li>                                                                           
+                          <li role="menu-item">                            
+                            <a href="#">Regional and global programmes</a>                          
+                          </li>                                                                                                                   
+                        </ul>                                                               
+                      </li>                                                                      
+                    </ul>                                                   
+                  </li>                                                                                               
+                </ul>                                       
+              </div>                                 
+            </div>                                   
+          </nav>                     
+        </div>               
+      </header>               
+      <!--NAP Central landing page-->                
+      <section id="main" class="row">                     
+        <div class="span3">                           
+          <div id="guidelines" class="row infoBoxBorder">                                     
+            <div hint="Guidelines">                                           
+              <a href="#">                
+                <img class="thumbnail" src="images/nap-guidelines.png"></a>                                           
+                                      
+            </div>                           
+          </div>                           
+          <div id="countries" class="row infoBoxBorder">                                     
+            <div hint="Country Information">                                           
+              <a href="#">                
+                <img class="thumbnail" src="images/countries.png"></a>                                           
+                                      
+            </div>                           
+          </div>                           
+                  
+        </div>                     
+        <div id="turntable" class="carousel slide span6">                           
+          <ol class="carousel-indicators">                                 
+            <li data-target="#turntable" data-slide-to="0" class="active">            
+            </li>                                 
+            <li data-target="#turntable" data-slide-to="1">            
+            </li>                                 
+            <li data-target="#turntable" data-slide-to="2">            
+            </li>                           
+          </ol>                           
+          <div class="carousel-inner">                                 
+            <div class="item active">                                       
+              <img src="images/slider1.jpg">                                       
+              <div class="carousel-caption">                          <h4>The NAP process</h4>                                           
+                <p>The NAP is a process to facilitate effective adaptation in countries through reducing vulnerability to climate change, and facilitating integration of adaptation into development.                 
+                </p>                                       
+              </div>                                 
+            </div>                                 
+            <div class="item">                                       
+              <img src="images/slider2.jpg">                                       
+              <div class="carousel-caption">                          <h4>The technical guidelines for the NAP process</h4>                                           
+                <p>The technical guidelines for the NAP process are designed to support countries in their planning and implementation of adaptation at the national level.                 
+                </p>                                       
+              </div>                                 
+            </div>                                 
+            <div class="item">                                       
+              <img src="images/slider3.jpg">                                       
+              <div class="carousel-caption">                          <h4>The NAP Central</h4>                                           
+                <p>The NAP Central is the main information platform on supporting the NAP process.                 
+                </p>                                       
+              </div>                                 
+            </div>                           
+          </div>                           
+          <a class="carousel-control left" href="#turntable" data-slide="prev">‹</a>                           
+          <a class="carousel-control right" href="#turntable" data-slide="next">›</a>                     
+        </div>                     
+        <div class="span3">                           
+          <div id="caseStudies" class="row infoBoxBorder">                                 
+            <div hint="Case Studies">                                       
+              <a href="#">                
+                <img class="thumbnail" src="images/case-studies.png"></a>                                       
+                                  
+            </div>                           
+          </div>                           
+          <div id="globalSupport" class="row infoBoxBorder">                                     
+            <div hint="Global Support Programme">                                           
+              <a href="#">                
+                <img class="thumbnail" src="images/global-support.png"></a>                                     
+            </div>                           
+          </div>                                                
+        </div>               
+      </section>               
+      <section id="mainFooter" class="row">                     
+        <div class="span3 infoBoxBorder">                           
+          <div hint="Hazards">                                 
+            <div>                                       
+              <ul class="imageList">                                             
+                <li>                                                 
+                <div>                                                       
+                  <div class="capty-wrapper" style="height: 78px; overflow: hidden; position: relative; width: 225px;"><div class="capty-image"><img src="images/hazardsDrought.jpg" alt="Drought/aridity"></div><div class="capty-caption" style="height: 30px; opacity: 0.7; position: relative; top: -30px;">Drought/aridity</div></div>                                                 
+                </div>                                             
+                </li>                                             
+                <li>                                                 
+                <div>                                                       
+                  <div class="capty-wrapper" style="height: 78px; overflow: hidden; position: relative; width: 225px;"><div class="capty-image"><img src="images/hazardsFlood.jpg" alt="Floods"></div><div class="capty-caption" style="height: 30px; opacity: 0.7; position: relative; top: -30px;">Floods</div></div>                                                 
+                </div>                                             
+                </li>                                             
+                <li>                                                 
+                <div>                                                       
+                  <div class="capty-wrapper" style="height: 78px; overflow: hidden; position: relative; width: 225px;"><div class="capty-image"><img src="images/hazardsStorm.jpg" alt="Storms"></div><div class="capty-caption" style="height: 30px; opacity: 0.7; position: relative; top: -30px;">Storms</div></div>                                                 
+                </div>                                             
+                </li>                                       
+              </ul>                                 
+            </div>                           
+          </div>                     
+        </div>                     
+        <div id="Div3" class="span3 infoBoxBorder">                           
+          <div hint="Sectors">                                 
+                                 
+            <div>                                       
+              <ul class="imageList">                                             
+                <li>                                                 
+                <div>                                                       
+                  <div class="capty-wrapper" style="height: 78px; overflow: hidden; position: relative; width: 225px;"><div class="capty-image"><img src="images/sectorFood.jpg" alt="Agriculture &amp; Food Security"></div><div class="capty-caption" style="height: 30px; opacity: 0.7; position: relative; top: -30px;">Agriculture &amp; Food Security</div></div>                                                 
+                </div>                                             
+                </li>                                             
+                <li>                                                 
+                <div>                                                       
+                  <div class="capty-wrapper" style="height: 78px; overflow: hidden; position: relative; width: 225px;"><div class="capty-image"><img src="images/sectorWater.jpg" alt="Water Resources"></div><div class="capty-caption" style="height: 30px; opacity: 0.7; position: relative; top: -30px;">Water Resources</div></div>                                                 
+                </div>                                             
+                </li>                                             
+                <li>                                                 
+                <div>                                                       
+                  <div class="capty-wrapper" style="height: 78px; overflow: hidden; position: relative; width: 225px;"><div class="capty-image"><img src="images/sectorCoastal.jpg" alt="Coastal Zones"></div><div class="capty-caption" style="height: 30px; opacity: 0.7; position: relative; top: -30px;">Coastal Zones</div></div>                                                 
+                </div>                                             
+                </li>                                       
+              </ul>                                 
+            </div>                                 
+
+                            
+          </div>                     
+        </div>                     
+        <div class="span3 infoBoxBorder">                           
+          <div hint="Data, Method and Tools">                                 
+            <div>                                       
+              <ul class="imageList">                                             
+                <li>                                                 
+                <div>                                                       
+                  <div class="capty-wrapper" style="height: 78px; overflow: hidden; position: relative; width: 225px;"><div class="capty-image"><img src="images/landsat.jpg" alt="Data, Methods and Tools"></div><div class="capty-caption" style="height: 30px; opacity: 0.7; position: relative; top: -30px;">Data, Methods and Tools</div></div>                                                 
+                </div>                                             
+                </li>                                       
+              </ul>                                       
+              <ul id="dmtList" style="font-size:smaller; "> 
+              <br>                                            
+                <p>                                                 
+                + <a href="#">                                   Data                                                   
+                </a>                                             
+                </p>                                             
+                <p>                                                 
+                + <a href="#">                                    Methods                                                  
+                </a>                                             
+                </p>                                             
+                <p>                                                 
+                + <a href="#">                                    Tools                                                  
+                </a>                                             
+                </p>                                       
+              </ul>                                 
+            </div>                                 
+          </div>                     
+        </div>                     
+        <div class="span3 infoBoxBorder">                           
+          <div hint="Portals">                                 
+            <div style="font-size:smaller; ">                                       
+                <br>                            
+                <p>                                                 
+                + <a href="#">                                    Country adaptation priorities                                                  
+                </a>                                             
+                </p>                                             
+                <p>                                                 
+                + <a href="#">                                    Adaptation projects database                                                  
+                </a>                                             
+                </p>                                             
+                <p>                                                 
+                + <a href="#">                                    Best practices and lessons learned                                                  
+                </a>                                             
+                </p>                                             
+                <p>                                                 
+                + <a href="#">                                    Data and tool archive                                                  
+                </a>                                             
+                </p>                                             
+                <p>                                                 
+                + <a href="#">                                    NAP Outputs                                                  
+                </a>                                             
+                </p>                                             
+                <p>                                                 
+                + <a href="#">                                    Synthesis of available science                                                  
+                </a>                                             
+                </p>                                             
+                <p>                                                 
+                + <a href="#">                                    NAP Exchange                                                  
+                </a>                                             
+                </p>                                       
+                                
+            </div>                           
+          </div>                     
+        </div>               
+      </section>               
+      <!--Technical Guidelines Page-->                
+      <section id="steps" class="row makeSeeThrough">                     
+        <div id="stepIndex" class="accordion span4 infoBoxBorder">                           
+          <div class="accordion-group">                                 
+            <div class="accordion-heading">                                       
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#stepIndex" data-content="eatitle" href="#collapseOne">                                             
+                <div>                                Element A. Lay the groundwork and address the gaps                                              
+                </div>                        </a>                                 
+            </div>                                 
+            <div id="collapseOne" class="accordion-body collapse">                                       
+              <div class="accordion-inner">                                             
+                <a href="#" class="toggle-step" data-content="ea1">                                                   
+                  <div>                                                         
+                    <h5 class="upper">step a.1</h5>                                    Initiating and launching the NAP process                                                    
+                  </div>                            </a>                                             
+                <a href="#" class="toggle-step" data-content="ea2">                                                   
+                  <div>                                                         
+                    <h5 class="upper">step a.2</h5>                                    Stocktaking: identifying available information and assessing gaps and needs                                                   
+                  </div>                            </a>                                             
+                <a href="#" class="toggle-step" data-content="ea3">                                                   
+                  <div>                                                         
+                    <h5 class="upper">step a.3</h5>                                    Addressing capacity gaps                                                    
+                  </div>                            </a>                                             
+                <a href="#" class="toggle-step" data-content="ea4">                                                   
+                  <div>                                                         
+                    <h5 class="upper">step a.4</h5>                                    Assessing development needs and climate vulnerabilities                                                    
+                  </div>                            </a>                                       
+              </div>                                 
+            </div>                           
+          </div>                           
+          <div class="accordion-group">                                 
+            <div class="accordion-heading">                                       
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#stepIndex" data-content="ebtitle" href="#collapseTwo">                                             
+                <div>                                Element B. Preparatory elements                                              
+                </div>                        </a>                                 
+            </div>                                 
+            <div id="collapseTwo" class="accordion-body collapse">                                       
+              <div class="accordion-inner">                                             
+                <a href="#" class="toggle-step" data-content="eb1">                                                   
+                  <div>                                                         
+                    <h5 class="upper">step b.1</h5>                                    Analysing current climate and future climate change scenarios                                                    
+                  </div>                            </a>                                             
+                <a href="#" class="toggle-step" data-content="eb2">                                                   
+                  <div>                                                         
+                    <h5 class="upper">step b.2</h5>                                    Assessing climate vulnerabilities and identifying adaptation options                                    
+                  </div>                            </a>                                             
+                <a href="#" class="toggle-step" data-content="eb3">                                                   
+                  <div>                                                         
+                    <h5 class="upper">step b.3</h5>                                    Reviewing and appraising adaptation options                                                    
+                  </div>                            </a>                                             
+                <a href="#" class="toggle-step" data-content="eb4">                                                   
+                  <div>                                                         
+                    <h5 class="upper">step b.4</h5>                                    Compiling and communicating national adaptation plans                                                    
+                  </div>                            </a>                                             
+                <a href="#" class="toggle-step" data-content="eb5">                                                   
+                  <div>                                                         
+                    <h5 class="upper">step b.5</h5>                                    Integrating climate change adaptation into planning                                                    
+                  </div>                            </a>                                       
+              </div>                                 
+            </div>                           
+          </div> 
+          <div class="accordion-group">                                 
+            <div class="accordion-heading">                                       
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#stepIndex" data-content="ectitle" href="#collapseThree">                                             
+                <div>                                Element C. Implementation strategies                                             
+                </div>                        </a>                                 
+            </div>                                 
+            <div id="collapseThree" class="accordion-body collapse">                                       
+              <div class="accordion-inner">                                             
+                <a href="#" class="toggle-step" data-content="ec1">                                                   
+                  <div>                                                         
+                    <h5 class="upper">step c.1</h5>                                    Prioritizing climate change adaptation in national planning                                                    
+                  </div>                            </a>                                             
+                <a href="#" class="toggle-step" data-content="ec2">                                                   
+                  <div>                                                         
+                    <h5 class="upper">step c.2</h5>                                    Developing an implementation strategy                                    
+                  </div>                            </a>                                             
+                <a href="#" class="toggle-step" data-content="ec3">                                                   
+                  <div>                                                         
+                    <h5 class="upper">step c.3</h5>                                    Enhancing capacity for planning and implementing adaptation                                                    
+                  </div>                            </a>                                             
+                <a href="#" class="toggle-step" data-content="ec4">                                                   
+                  <div>                                                         
+                    <h5 class="upper">step c.4</h5>                                    Promoting coordination and synergy                                                     
+                  </div>                            </a>                                                                                   
+              </div>                                 
+            </div>                           
+          </div>  
+          <div class="accordion-group">                                 
+            <div class="accordion-heading">                                       
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#stepIndex" data-content="edtitle" href="#collapseFour">                                             
+                <div>                               Element D. Reporting, monitoring and review                                            
+                </div>                        </a>                                 
+            </div>                                 
+            <div id="collapseFour" class="accordion-body collapse">                                       
+              <div class="accordion-inner">                                             
+                <a href="#" class="toggle-step" data-content="ed1">                                                   
+                  <div>                                                         
+                    <h5 class="upper">step d.1</h5>                                    Monitoring the NAP process                                                     
+                  </div>                            </a>                                             
+                <a href="#" class="toggle-step" data-content="ed2">                                                   
+                  <div>                                                         
+                    <h5 class="upper">step d.2</h5>                                    Reviewing the NAP process                                 
+                  </div>                            </a>                                             
+                <a href="#" class="toggle-step" data-content="ed3">                                                   
+                  <div>                                                         
+                    <h5 class="upper">step d.3</h5>                                   Updating the national adaptation plans                                                   
+                  </div>                            </a>                                             
+                <a href="#" class="toggle-step" data-content="ed4">                                                   
+                  <div>                                                         
+                    <h5 class="upper">step d.4</h5>                                    Outreach on the NAP process and reporting on progress and effectiveness                                                    
+                  </div>                            </a>                                                                                   
+              </div>                                 
+            </div>                           
+          </div>                      
+        </div>                                  
+        <div id="stepContent" class="span8">                           
+          <div class="infoBoxBorder">                                 
+            <div id="contentShowpiece">                                                        
+			   Please select from the left-side menu
+            </div>                             
+          </div>                     
+        </div>               
+      </section>               
+      <footer class="row">                     
+          <p align="right" style="align:right; padding-top:8px; padding-right:20px; "><a href="#"><font color="white" style="font-size:smaller; ">UNFCCC resources</font></a></p>                              
+              
+      </footer>         
+    </div>        
+<script language="javascript" type="text/javascript" src="js/jquery-1.8.2.js"></script>       
+<script language="javascript" type="text/javascript" src="js/jquery.capty.min.js"></script>       
+<script language="javascript" type="text/javascript" src="js/bootstrap.js"></script>             
+<script language="javascript" type="text/javascript" src="js/nap.js"></script>       
+<script type="text/javascript">
+  $(document).ready(function () {
+    /* See nap.js */
+    debugger;
+    unfccc.nap.Initialize();
+  });
+    </script>     
+</body>
+
+</html>

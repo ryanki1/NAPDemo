@@ -1,0 +1,20 @@
+﻿body 
+{
+}
+
+#pageContainer
+{   
+    margin: 0px auto;
+}
+
+#img1
+{
+    height: 330px;
+    width: 1000px;
+}
+
+#img2
+{
+    height: 330px;
+    width: 52%;
+}

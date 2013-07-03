@@ -1,0 +1,319 @@
+/*/////////////////////////////////////////////////////////////////////
+ // 
+ // Custom theme code styles
+ // Written by Themelize.me (http://themelize.me)
+ // 
+ // This is a skeleton starter template for overriding styles
+ // set by Bootstrap & the theme
+ // 
+ // ----------------------------------------------------
+ // 
+ // Remove unused code & commenting for better performances
+ // 
+ // ----------------------------------------------------
+ // 
+ // @see - Usefuls tools online for editing
+ // 1. http://charliepark.org/bootstrap_buttons/ - Button style generator
+ // 2. http://www.colorzilla.com/gradient-editor/ - CSS3 gradient maker
+ // 
+ // @note
+ // To ensure custom styles are picked up
+ // wrap definitions in body tag
+ // ie.
+ // body .navbar-inner {
+ //   background: #ff0000;
+ // }
+ // 
+ /////////////////////////////////////////////////////////////////////*/
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*
+ * --------------------------------------------------
+ * 1. Common Elements
+ *--------------------------------------------------
+ */
+a {
+  color: #00bb5c;
+}
+a:hover {
+  color: #009748;
+}
+.btn.btn-primary,
+.btn.btn-navbar {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #00ad54;
+  background-image: -moz-linear-gradient(top, #00bb5c, #009748);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#00bb5c), to(#009748));
+  background-image: -webkit-linear-gradient(top, #00bb5c, #009748);
+  background-image: -o-linear-gradient(top, #00bb5c, #009748);
+  background-image: linear-gradient(to bottom, #00bb5c, #009748);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff00bb5c', endColorstr='#ff009748', GradientType=0);
+  border-color: #009748 #009748 #004b24;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #009748;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.btn.btn-primary:hover,
+.btn.btn-navbar:hover,
+.btn.btn-primary:active,
+.btn.btn-navbar:active,
+.btn.btn-primary.active,
+.btn.btn-navbar.active,
+.btn.btn-primary.disabled,
+.btn.btn-navbar.disabled,
+.btn.btn-primary[disabled],
+.btn.btn-navbar[disabled] {
+  color: #ffffff;
+  background-color: #009748;
+  *background-color: #007e3c;
+}
+.btn.btn-primary:active,
+.btn.btn-navbar:active,
+.btn.btn-primary.active,
+.btn.btn-navbar.active {
+  background-color: #006430 \9;
+}
+.btn.more-link {
+  background: #ffffff;
+  color: #00bb5c;
+}
+.btn.more-link:hover {
+  background: #00bb5c;
+  color: #ffffff;
+}
+.btn.more-link i,
+.btn.more-link [class*=" icon-"] {
+  background: #009748;
+  color: #ffffff;
+}
+.em,
+.modal a {
+  color: #00bb5c;
+}
+#header-hidden-link a {
+  background: #00bb5c;
+}
+/*
+ * --------------------------------------------------
+ * 2. Header & Navigation 
+ *--------------------------------------------------
+ */
+#background-wrapper {
+  border-bottom-color: #00bb5c;
+}
+.header-hidden {
+  background: #00bb5c;
+}
+.header-hidden a.more-link {
+  color: #00bb5c;
+}
+.header .brand {
+  /* replace logo colour */
+  background: url(../img/logo-green.png) left top no-repeat;
+}
+.user-menu li a:hover,
+.user-menu li i {
+  color: #00bb5c;
+}
+.social-media a {
+  color: #00bb5c;
+}
+.social-media a i {
+  border-color: #00bb5c;
+}
+.social-media a:hover {
+  background: #00bb5c;
+  color: #ffffff;
+}
+.social-media a:hover i {
+  border-color: #ffffff;
+}
+#navigation .btn-navbar {
+  color: #00bb5c;
+}
+#navigation .btn-navbar:hover,
+#navigation .btn-navbar i,
+#navigation .btn-navbar [class*=" icon-"] {
+  background: #00bb5c;
+}
+.navbar .nav#main-menu li a:hover {
+  border-color: #00bb5c;
+  color: #00bb5c;
+}
+.navbar .nav#main-menu li .caret {
+  color: #00bb5c;
+}
+.navbar .nav#main-menu li a.top-level:hover,
+.navbar .nav#main-menu li.home-link a:hover {
+  border-bottom-color: #00bb5c;
+  color: #00bb5c;
+}
+.navbar .nav#main-menu li.open a.dropdown-toggle,
+.navbar .nav#main-menu li.active a.top-level,
+.navbar .nav#main-menu li.active a:hover {
+  background: #00bb5c;
+  color: #ffffff;
+}
+.navbar .nav#main-menu li.open a.dropdown-toggle .caret,
+.navbar .nav#main-menu li.active a.top-level .caret,
+.navbar .nav#main-menu li.active a:hover .caret {
+  color: #ffffff;
+}
+.navbar .nav#main-menu .dropdown-menu {
+  border-top-color: #00bb5c;
+}
+.navbar .nav#main-menu .dropdown-menu li[role="menuitem"] a {
+  color: #343331;
+}
+.navbar .nav#main-menu .dropdown-menu li[role="menuitem"] a:before {
+  color: #00bb5c;
+}
+.navbar .nav#main-menu .dropdown-menu li[role="menuitem"] a:hover {
+  color: #ffffff;
+  background: #343331;
+}
+.navbar .nav#main-menu .dropdown-menu.mega-menu .mega-menu-footer a.more-link {
+  background: #ffffff;
+  color: #00bb5c;
+}
+.navbar .nav#main-menu .dropdown-menu.mega-menu .mega-menu-footer a.more-link:hover {
+  background: #00bb5c;
+  color: #ffffff;
+}
+.navbar .nav#main-menu .dropdown-menu.mega-menu .mega-menu-footer a.more-link i,
+.navbar .nav#main-menu .dropdown-menu.mega-menu .mega-menu-footer a.more-link [class*=" icon-"] {
+  background: #009748;
+  color: #ffffff;
+}
+.navbar .nav > li > a:focus,
+.navbar .nav > li > a:hover {
+  color: #333333;
+}
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+  color: #333333;
+}
+.navbar .nav li.dropdown.open > .dropdown-toggle,
+.navbar .nav li.dropdown.active > .dropdown-toggle,
+.navbar .nav li.dropdown.open.active > .dropdown-toggle {
+  color: #333333;
+}
+/*
+ * --------------------------------------------------
+ * 3. Content Area
+ *-------------------------------------------------- 
+ */
+.flexslider-carousel .flex-direction-nav a {
+  background: #00bb5c;
+}
+.flexslider-carousel .flex-direction-nav a:hover {
+  color: #ffffff;
+}
+.i-primary {
+  color: #00bb5c;
+}
+li .i-circle,
+.i-circle {
+  border-color: #00bb5c;
+}
+.services.block .container,
+.focus-block,
+.showcase-item {
+  border-bottom-color: #00bb5c;
+}
+.pricing-stack .well .popular {
+  color: #00bb5c;
+}
+.pricing-stack .well ul.points li:before {
+  color: #00bb5c;
+}
+.stats .stat .well {
+  background-color: #009748;
+  background-image: -webkit-gradient(radial, center center, 0, center center, 460, from(#00ca60), to(#009748));
+  background-image: -webkit-radial-gradient(circle, #00ca60, #009748);
+  background-image: -moz-radial-gradient(circle, #00ca60, #009748);
+  background-image: -o-radial-gradient(circle, #00ca60, #009748);
+  background-repeat: no-repeat;
+}
+.stats .stat .well:after {
+  border-top-color: #00bb5c;
+}
+.date-wrapper span.date-m {
+  background: #00bb5c;
+}
+.tags .tag {
+  color: #00bb5c;
+}
+.accordion-heading .accordion-toggle {
+  color: #00bb5c;
+}
+.accordion-heading .accordion-toggle:hover {
+  background: #00bb5c;
+}
+.accordion-heading .accordion-toggle i {
+  background: #009748;
+}
+.connect-links a:hover i,
+.tabbable > ul.nav-tabs li a,
+ul.nav-tabs li a,
+.section-menu ul.nav-list li a,
+.team .media-heading {
+  color: #00bb5c;
+}
+.team a i {
+  background: #00bb5c;
+}
+.team a:hover i {
+  background: #009748;
+}
+#content-below {
+  background: #00bb5c;
+}
+/*
+ * --------------------------------------------------
+ * 3. Misc
+ * Other stuff
+ *--------------------------------------------------
+ */
+.primary-colour {
+  color: #00bb5c;
+}
+.primary-colour-bg {
+  background: #00bb5c;
+}
+.primary-colour-bg-50 {
+  background: rgba(0, 187, 92, 0.5);
+}
+.social-media a:hover {
+  background: #00bb5c;
+}

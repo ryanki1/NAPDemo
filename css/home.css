@@ -1,0 +1,123 @@
+/* CSS Document */        /**
+ * Layout for the homepage elements: carousel, projects, methodologies,
+ * calendar, multimedia, introduction and documentation.
+ *
+ * ------------------------------------------------------------------------- */
+ 
+/* Page layout ------------------------------------------------------------- */
+
+body               { background-color: #fff; color: #666; font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin:0; padding:10px; min-width:950px; max-width:1260px; position:absolute; }
+
+#col1              { float:left; min-width:706px; width:708px; }
+#col2              { float:left; width: 308px; margin:0 0 0 8px; max-width:308px; }
+#col3              { float:left; width: 308px; height: 345px; margin:0 0 0 8px; max-width:308px; }
+#subcols           { display:table; border-spacing:5px; }
+#subcol1, #subcol2 { border:1px solid #eee; display:table-cell; padding:5px; width:50%; }
+
+
+.row               { margin:0 0 0 -5px; width:718px;}
+
+@media only screen and (max-width:1024px) {
+	#subcols2      { display:table; border-spacing:5px; }
+	#col2, #col3   { width:50%; }
+}
+
+/* Main content ------------------------------------------------------------ */
+.section h2        { background:#f9f9f9; border:1px solid #ccc; font-size:12px; margin:0 0 1em; padding:5px 24px 5px 5px; position:relative; }
+.section h2 a      { position:absolute; right:6px !important; _right:11px !important; top:6px; }
+
+#subcol1 .section,
+#subcol2 .section  { margin:0 0 20px; padding:0; }
+#subcol4 .section  { padding:0; }
+
+#col1 ul, #col2 ol { list-style:none; margin:0; padding:0; }
+h3                 { font-size:12px; margin:12px 0; }
+#calendar, #subcol4{ border:1px solid #eee; padding:5px; margin:0 0 12px; }
+#cfi-mod, #subcol4 { border:1px solid #eee; padding:5px; margin:0 0 12px; }
+#subcol1 .section h2 a 
+                   { _right:16px; }
+
+/* Carousel ---------------------------------------------------------------- */
+.carousel          { height:333px; overflow:hidden; position:relative; width:708px; }
+.carousel-slides   { height:333px; width:9999px; }
+.carousel-item     { display:inline; float:left; height:333px; position:relative; width:708px; }
+.carousel-bg       { left:0; position:absolute; top:0; width:708px; }
+
+.dissolve .carousel-item      
+                   { -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter:alpha(opacity=0); display:block; float:none; opacity:0; position:absolute; top:0px; z-index:1; }
+.dissolve .carousel-item.old  
+                   { -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; filter:alpha(opacity=100); opacity:1; z-index:2; }
+.dissolve .carousel-item.new  
+                   { z-index:3; }
+.dissolve .carousel-item.this 
+                   { -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; filter:alpha(opacity=100); opacity:1; z-index:3; }
+
+/* In Focus --------------------------------------------------------------- */
+#focus             { height:333px; margin:0 0 7px; }
+#focus .article a  { font-weight:normal; }
+#focus .article h3 { font-size:2em; line-height:1; margin: 0px 0px 12px 0px;}
+#focus .article h3 a
+                   { color:#000; }
+#focus .article p  { color:#000; font-size:12px; line-height:16px; }
+#focus .carousel h2{ background:url('../CommonImages/carousel/focus.png') repeat; background:rgba(255,255,255,.8); _background:white; border:none; font-size:12px; line-height:1; margin:0 0 -32px; padding:10px; position:relative; text-transform:uppercase; z-index:5; }
+#focus .carousel-content
+                   { background:url('../CommonImages/carousel/focus.png') repeat; background:rgba(255,255,255,.8); _background:white; height:220px; margin-top:52px; padding:20px 20px 10px; position:relative; width:320px; z-index:2; }
+#focus .carousel-pointers
+                   { font-size:12px; position:absolute; right:10px; _right:15px; bottom:10px; _bottom:15px; }
+#focus .carousel-pointers a 
+                   { outline:none; padding:2px 3px; position:static; text-decoration:none; }  
+#focus .carousel-pointers a.this 
+                   { background:url('../CommonImages/carousel/focus.png') repeat; background:rgba(255,255,255,.6); _background:url('../CommonImages/carousel/focus.png') repeat; color:#000; }
+#focus .carousel-pointers a:last-child 
+                   { margin-left:10px; text-transform:none; }
+#focus .alt .carousel-content 
+                   { left:100%; margin-left:-360px; }
+.credits { width: 692px; padding: 8px; background-color: black; color: white; position: absolute; filter: alpha(opacity=70); bottom: 0px; left: 0px; z-index: 1000;  background:rgba(0,0,0,.5); _background-color:black; }                        
+
+/* Calendar --------------------------------------------------------------- */
+#calendar          { position:relative; }
+#calendar h3       { border-bottom:1px solid #eee; font-size:16px; font-weight:bold; padding:0 0 5px; }
+#calendar ul       { height:120px; overflow-y:auto;
+                      scrollbar-face-color: #F9F9F9;
+                      scrollbar-shadow-color: #000000;
+                      scrollbar-highlight-color: #F9F9F9;
+                      scrollbar-3dlight-color: #CCCCCC;
+                      scrollbar-darkshadow-color: #F9F9F9;
+                      scrollbar-track-color: #F9F9F9;
+                      scrollbar-arrow-color: #1478B7; }
+#next-month, #prev-month
+                   { border:1px solid #eee; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px; font-size:16px; line-height:1; padding:0 5px 3px; position:absolute; right:5px; top:44px; }
+#next-month:hover, #prev-month:hover,
+#next-month:focus, #prev-month:focus
+                   { background:#eee; outline:none; text-decoration:none; }
+#next-month.end, #prev-month.end
+                   { color:#eee; }
+#next-month.end:hover, #prev-month.end:hover,
+#next-month.end:focus, #prev-month.end:focus
+                   { background:none; }
+#prev-month        { right:30px; }
+.month             { display:none; }
+.active            { display:block; }
+.vevent            { color:#aaa; margin-top:10px; padding-left:10px; text-indent:-10px; }
+.vevent:first-child{ margin-top:0; }
+.summary, .dtstart, 
+.dtend, .location  { color:#666; }
+
+/* Calls for inputs module (top level page) ------------------------------------------ */
+#cfi-mod            { position:relative; }
+#cfi-mod h3         { border-bottom:1px solid #eee; font-size:16px; font-weight:bold; padding:0 0 5px; }
+#cfi-mod ul         { height:62px; overflow-y:auto; 
+                      scrollbar-face-color: #F9F9F9;
+                      scrollbar-shadow-color: #000000;
+                      scrollbar-highlight-color: #F9F9F9;
+                      scrollbar-3dlight-color: #CCCCCC;
+                      scrollbar-darkshadow-color: #F9F9F9;
+                      scrollbar-track-color: #F9F9F9;
+                      scrollbar-arrow-color: #1478B7; }
+
+                   
+/* Sights and Sounds random content -------------------------------------------------- */
+  
+#tips, #tips li    { }
+#tips              { }
+#tips li           { display:none; }
